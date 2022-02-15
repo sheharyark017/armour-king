@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --main: #132258;
+}
+
+.inner-section {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.main-button {
+  background-color: var(--main);
+  color: #fff;
+  padding: 8px 22px;
+  transition: all 0.2s linear;
+  border-radius: 3px;
+}
+
+.main-button:hover {
+  background-color: #192966;
+  color: #fff;
+  padding: 9px 28px;
+  box-shadow: -5px -5px 3px 2px #dadada;
+}
+
+/* join ambassador */
+
+.join-ambassador {
+  text-align: center;
+  padding: 80px 15% 60px;
+  background-color: #f9f8f6;
+  border-bottom: 1px solid #ccc;
+}
+
+.join-ambassador-text {
+  margin-bottom: 50px;
+}
+
+.join-ambassador-text p:nth-child(1) {
+  font-size: 30px;
+  color: var(--main);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.join-ambassador-text p:nth-child(2) {
+  font-size: 17px;
+  color: #585858;
+  font-weight: 500;
+}
+
+/* end join ambassador */
+
+/* ambassador icons */
+
+.ambassador-icons {
+  padding: 70px 12% 50px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.ambassador-icons .icon-block {
+  margin-bottom: 30px;
+}
+
+.ambassador-icons .icon {
+  border: 3px solid var(--main);
+  width: 85px;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ambassador-icons .icon i {
+  color: var(--main);
+  font-size: 40px;
+}
+
+.ambassador-icons .text {
+  margin-top: 15px;
+}
+.ambassador-icons .text p:nth-child(1) {
+  font-size: 23px;
+  font-weight: 700;
+  color: var(--main);
+  margin-bottom: 10px;
+}
+.ambassador-icons .text p:nth-child(2) {
+  color: #777;
+  font-size: 15px;
+}
+
+/* end ambassador icons */
+
+/* ambassador faq */
+
+.ambassador-faq {
+  padding: 50px 15% 80px;
+  background-color: #f9f8f6;
+}
+
+.ambassador-faq-top {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.ambassador-faq-top p {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--main);
+}
+
+/* end ambassador faq */
+
+@media screen and (max-width: 980px) {
+  /* join ambassador */
+
+  .join-ambassador {
+    padding: 40px 15% 60px;
+  }
+
+  .join-ambassador-text {
+    margin-bottom: 30px;
+  }
+
+  .join-ambassador-text p:nth-child(1) {
+    font-size: 23px;
+  }
+
+  .join-ambassador-text p:nth-child(2) {
+    font-size: 15px;
+  }
+
+  /* end join ambassador */
+
+  /* ambassador icons */
+
+  .ambassador-icons {
+    padding: 50px 12% 30px;
+  }
+
+  /* end ambassador icons */
+
+  /* ambassador faq */
+
+  .ambassador-faq {
+    padding: 50px 3% 60px;
+  }
+
+  .ambassador-faq-top {
+    margin-bottom: 30px;
+  }
+
+  .ambassador-faq-top p {
+    font-size: 25px;
+  }
+
+  /* end ambassador faq */
+}

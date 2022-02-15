@@ -69,3 +69,18 @@ footer {
   font-size: 15px;
   font-weight: 500;
 }
+
+@media screen and (max-width: 980px) {
+  .footer-inner {
+    padding: 40px 5%;
+  }
+
+  .footer-col {
+    margin-bottom: 15px;
+  }
+
+  .footer-links-top p {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}

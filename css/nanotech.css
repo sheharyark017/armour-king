@@ -1,0 +1,349 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --main: #132258;
+}
+
+.inner-section {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.main-button {
+  background-color: var(--main);
+  color: #fff;
+  padding: 8px 22px;
+  transition: all 0.2s linear;
+  border-radius: 3px;
+}
+
+.main-button:hover {
+  background-color: #192966;
+  color: #fff;
+  padding: 9px 28px;
+  box-shadow: -5px -5px 3px 2px #dadada;
+}
+
+/* sheild */
+
+.sheild {
+  background-color: #efefef;
+  text-align: center;
+  padding: 50px 25%;
+  border-bottom: 1px solid #ccc;
+}
+
+.sheild-top p:nth-child(1) {
+  font-size: 31px;
+  font-weight: 700;
+  color: var(--main);
+  margin-bottom: 7px;
+}
+
+.sheild-top p:nth-child(2) {
+  color: #777;
+}
+
+/* end sheild */
+
+/* nano video */
+
+.nano-video {
+  text-align: center;
+  padding: 70px 17%;
+  border-bottom: 1px solid #ccc;
+}
+
+.nano-video .video-top {
+  margin-bottom: 50px;
+}
+
+.nano-video .video-top p:nth-child(1) {
+  font-size: 31px;
+  font-weight: 700;
+  color: var(--main);
+  margin-bottom: 7px;
+}
+
+.nano-video .video-top p:nth-child(2) {
+  color: #777;
+}
+
+.video-player iframe {
+  width: 100%;
+  aspect-ratio: 1.7777;
+}
+
+/* end nano video */
+
+/* nano tech */
+
+.nano-tech {
+  text-align: center;
+  padding: 50px 17%;
+  background-color: #f9f8f6;
+  border-bottom: 1px solid #ccc;
+}
+
+.nano-tech-top {
+  margin-bottom: 50px;
+}
+
+.nano-tech-top p:nth-child(1) {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--main);
+}
+
+.nano-tech-top p:nth-child(2) {
+  color: #777;
+  font-size: 15px;
+}
+
+.nano-tech-top p:nth-child(3) {
+  color: #777;
+  font-size: 15px;
+}
+
+.nano-tech .nano-coated {
+  margin-bottom: 70px;
+}
+
+.nano-tech .coated-top {
+  margin-bottom: 20px;
+}
+
+.nano-tech .coated-top p {
+  font-size: 27px;
+  color: var(--main);
+  font-weight: 700;
+}
+
+.nano-tech .coated-image img {
+  width: 80%;
+}
+
+.nano-tech .zoom-top {
+  margin-bottom: 30px;
+}
+
+.nano-tech .zoom-top p {
+  font-size: 27px;
+  font-weight: 700;
+  color: var(--main);
+}
+
+.nano-tech .zoom-images {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nano-tech .zoom-images img {
+  width: 25%;
+}
+
+/* end nano tech */
+
+/* nano comparison */
+
+.nano-comparison {
+  padding: 50px 17%;
+}
+
+.comparison-top {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.comparison-top p:nth-child(1) {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--main);
+  margin-bottom: 7px;
+}
+
+.comparison-top p:nth-child(2) {
+  color: #777;
+  font-size: 15px;
+}
+
+.nano-comparison thead {
+  background-color: #444;
+  color: #fff;
+}
+
+.nano-comparison table tr i {
+  color: #cfcfcf;
+  font-size: 18px;
+}
+
+.nano-comparison table .uv-armour i:nth-child(-n + 5) {
+  color: #efad4c;
+}
+
+.nano-comparison table .uv-wax i:nth-child(-n + 2) {
+  color: #efad4c;
+}
+
+.nano-comparison table .uv-none i:nth-child(-n + 1) {
+  color: #efad4c;
+}
+
+.nano-comparison table .corrosion-armour i:nth-child(-n + 4) {
+  color: #efad4c;
+}
+
+.nano-comparison table .corrosion-wax i:nth-child(-n + 0) {
+  color: #efad4c;
+}
+
+.nano-comparison table .corrosion-none i:nth-child(-n + 0) {
+  color: #efad4c;
+}
+
+.nano-comparison table .scratch-armour i:nth-child(-n + 4) {
+  color: #efad4c;
+}
+
+.nano-comparison table .scratch-wax i:nth-child(-n + 1) {
+  color: #efad4c;
+}
+
+.nano-comparison table .scratch-none i:nth-child(-n + 0) {
+  color: #efad4c;
+}
+
+.nano-comparison table .durability-armour i:nth-child(-n + 5) {
+  color: #efad4c;
+}
+
+.nano-comparison table .durability-wax i:nth-child(-n + 1) {
+  color: #efad4c;
+}
+
+.nano-comparison table .durability-none i:nth-child(-n + 1) {
+  color: #efad4c;
+}
+
+.nano-comparison table .gloss-armour i:nth-child(-n + 5) {
+  color: #efad4c;
+}
+
+.nano-comparison table .gloss-wax i:nth-child(-n + 4) {
+  color: #efad4c;
+}
+
+.nano-comparison table .gloss-none i:nth-child(-n + 1) {
+  color: #efad4c;
+}
+
+/* end nano comparison */
+
+@media screen and (max-width: 980px) {
+  /* sheild */
+
+  .sheild {
+    padding: 50px 5%;
+  }
+
+  .sheild-top p:nth-child(1) {
+    font-size: 25px;
+  }
+
+  .sheild-top p:nth-child(2) {
+    font-size: 15px;
+    color: #777;
+  }
+
+  .sheil-image img {
+    width: 100%;
+  }
+
+  /* end sheild */
+
+  /* nano video */
+
+  .nano-video {
+    padding: 50px 5%;
+  }
+
+  .nano-video .video-top {
+    margin-bottom: 40px;
+  }
+
+  .nano-video .video-top p:nth-child(1) {
+    font-size: 25px;
+  }
+
+  .nano-video .video-top p:nth-child(2) {
+    font-size: 15px;
+  }
+
+  /* end nano video */
+
+  /* nano tech */
+
+  .nano-tech {
+    padding: 50px 5%;
+  }
+
+  .nano-tech-top p:nth-child(1) {
+    color: var(--main);
+  }
+
+  .nano-tech-top p:nth-child(2) {
+    font-size: 14px;
+  }
+
+  .nano-tech-top p:nth-child(3) {
+    font-size: 14px;
+  }
+
+  .nano-tech .nano-coated {
+    margin-bottom: 50px;
+  }
+
+  .nano-tech .coated-top p {
+    font-size: 23px;
+  }
+
+  .nano-tech .coated-image img {
+    width: 70%;
+  }
+
+  .nano-tech .zoom-top p {
+    font-size: 23px;
+  }
+
+  .nano-tech .zoom-images img {
+    width: 35%;
+  }
+
+  /* end nano tech */
+
+  /* nano comparison */
+
+  .nano-comparison {
+    padding: 50px 5%;
+  }
+
+  .comparison-top p:nth-child(1) {
+    font-size: 25px;
+  }
+
+  .nano-comparison .table th,
+  .nano-comparison .table td {
+    min-width: 180px;
+  }
+
+  /* end nano comparison */
+}

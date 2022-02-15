@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+    <meta name="google-site-verification" content="p-Md2ucVg1vHaqseHphJe9jOsuK_zNrJZDSsi_A1fQM" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- css file -->
+    <link rel="stylesheet" href="css/ambassador.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/accordion.css">
+
+    <!-- font awesome -->
+    <!-- <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-replace-svg="nest"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <nav class="main-nav">
+        <div class="navbar-top">
+            <div class="inner-section">
+                <div class="inner-navbar-top">
+                    <div class="account">
+                        <span>Account</span>
+                        <div class="account-dropdown">
+                            <ul>
+                                <li><a href="">Register</a></li>
+                                <li><a href="">Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="inner-section inner-nav">
+
+            <div class="navbar-bottom">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="logo">
+                    <img src="images/logo-black.png" alt="">
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">How It Works</a></li>
+                    </ul>
+                </div>
+                <div class="nav-cart cart-button">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>4</span>
+                </div>
+            </div>
+        </div>
+        <div class="cart-sidebar">
+            <div class="inner-cart">
+                <div class="cart-top">
+                    <div class="cart-back">
+                        <i class="fa-solid fa-arrow-right-long cart-close"></i>
+                    </div>
+                    <div class="cart-sidebar-logo">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="cart-badge">
+                        <span>4</span>
+                    </div>
+                </div>
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <img src="images/1.jpg" alt="">
+                        </div>
+                        <div class="cart-item-details">
+                            <div class="cart-item-top">
+                                <div class="cart-item-name">
+                                    <p>Armor Shield IX DIY Kit</p>
+                                    <p>2 x $30</p>
+                                </div>
+                                <div class="cart-item-remove">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                            </div>
+                            <div class="cart-item-bottom">
+                                <div class="cart-item-counter">
+                                    <span><button>-</button></span>
+                                    <span>2</span>
+                                    <span><button>+</button></span>
+                                </div>
+                                <div class="cart-item-total">
+                                    <p>$60</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <img src="images/2.jpg" alt="">
+                        </div>
+                        <div class="cart-item-details">
+                            <div class="cart-item-top">
+                                <div class="cart-item-name">
+                                    <p>Armor Shield IX DIY Kit</p>
+                                    <p>2 x $45</p>
+                                </div>
+                                <div class="cart-item-remove">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                            </div>
+                            <div class="cart-item-bottom">
+                                <div class="cart-item-counter">
+                                    <span><button>-</button></span>
+                                    <span>2</span>
+                                    <span><button>+</button></span>
+                                </div>
+                                <div class="cart-item-total">
+                                    <p>$90</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-bottom">
+                    <div class="sub-total">
+                        <p>Subtotal</p>
+                        <p>$150</p>
+                    </div>
+                    <div class="checkout-button">
+                        <button>Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- end navbar -->
+
+    <div class="home-body">
+
+        <!-- ambassador page -->
+
+        <!-- join ambassador -->
+
+        <div class="join-ambassador">
+            <div class="inner-section">
+                <div class="join-ambassador-text">
+                    <p>JOIN OUR AMBASSADOR PROGRAM</p>
+                    <p>Love ArmounKing? Spread the world aroung and receive 25% per sale by promoting us.</p>
+                </div>
+                <div class="join-ambassador-button">
+                    <a href="" class="main-button">BECOME AN AMBASSADOR</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- end join ambassador -->
+
+        <!-- ambassador icons -->
+
+        <div class="ambassador-icons">
+            <div class="inner-section">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="icon-block col-lg-4 col-md-4 col-12">
+                            <div class="icon">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="text">
+                                <p>FREE TO JOIN</p>
+                                <p>Signing up takes only minutes and it's entirely free.</p>
+                            </div>
+                        </div>
+                        <div class="icon-block col-lg-4 col-md-4 col-12">
+                            <div class="icon">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <div class="text">
+                                <p>HIGH COMMISSION</p>
+                                <p>All ambassador partners receive 25% of each sale.</p>
+                            </div>
+                        </div>
+                        <div class="icon-block col-lg-4 col-md-4 col-12">
+                            <div class="icon">
+                                <i class="fa-solid fa-rocket"></i>
+                            </div>
+                            <div class="text">
+                                <p>UNLIMITED EARNINGS</p>
+                                <p>There is no cap on the amount of commissions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- end ambassador icons -->
+
+        <!-- ambassador faq -->
+
+        <div class="ambassador-faq">
+            <div class="inner-section">
+                <div class="ambassador-faq-top">
+                    <p>FREQUENTLY ASKED QUESTIONS</p>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-block accordion-active">
+                        <div class="head">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <i class="fa-solid fa-caret-right"></i>
+                        </div>
+                        <div class="body">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore impedit natus
+                                dolores doloremque dolor earum qui, obcaecati ipsa fuga sed quaerat eligendi
+                                corporis nam
+                                necessitatibus eius deleniti molestias quod velit quia, nostrum, sit omnis
+                                quibusdam
+                                itaque
+                                minus. Earum illo consequatur dolores optio atque perspiciatis corporis. Harum
+                                facere iste
+                                facilis itaque.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-block">
+                        <div class="head">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <i class="fa-solid fa-caret-right"></i>
+                        </div>
+                        <div class="body">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore impedit natus
+                                dolores doloremque dolor earum qui, obcaecati ipsa fuga sed quaerat eligendi
+                                corporis nam
+                                necessitatibus eius deleniti molestias quod velit quia, nostrum, sit omnis
+                                quibusdam
+                                itaque
+                                minus. Earum illo consequatur dolores optio atque perspiciatis corporis. Harum
+                                facere iste
+                                facilis itaque.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-block">
+                        <div class="head">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit
+                                amet
+                                consectetur adipisicing elit. Veniam, accusantium!</p>
+                            <i class="fa-solid fa-caret-right"></i>
+                        </div>
+                        <div class="body">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, sunt vitae.
+                                Consectetur dolorem omnis, excepturi eius ut odio quae, quasi at necessitatibus
+                                exercitationem, quaerat laborum vitae corrupti explicabo ipsa repudiandae
+                                tempore
+                                repellat harum dolor sed debitis? Dicta porro nihil ad? Sapiente rem eius ea
+                                eligendi eum quaerat distinctio veritatis quod at error, nihil dolorem. Laborum
+                                doloribus laudantium eum voluptatem accusantium quos, placeat eveniet labore
+                                illo
+                                quibusdam praesentium impedit quaerat iure vero consequatur animi quis
+                                repudiandae
+                                architecto minima perspiciatis rem. Voluptatem ipsum doloribus unde voluptas
+                                deleniti earum pariatur ea, ducimus eos nisi! Consequuntur cumque nihil eius cum
+                                totam animi, minima in nulla corrupti voluptatum praesentium exercitationem
+                                optio
+                                recusandae vel aliquid deleniti voluptate asperiores quia dolores illum labore!
+                                Expedita veniam impedit vitae fuga architecto vel minima ipsam hic aliquid,
+                                earum
+                                perspiciatis harum. Dolore blanditiis iusto minima quasi aspernatur sunt,
+                                ducimus
+                                harum ex impedit libero illo debitis, eligendi nulla mollitia, velit accusamus
+                                ab
+                                nemo. Unde quas maiores officiis eius rerum non maxime sed distinctio nesciunt
+                                impedit alias repellendus quidem voluptates, minima in ipsa quaerat quo,
+                                molestiae
+                                iusto laborum iste autem. A natus amet inventore voluptatem odit placeat animi
+                                necessitatibus corrupti aliquid accusantium doloremque assumenda ad, perferendis
+                                veritatis facere quia accusamus fugit ex veniam eligendi consequuntur cumque.
+                                Impedit quas sint magnam doloremque vero est pariatur nesciunt aliquam similique
+                                deleniti nemo odio harum error saepe repellendus fuga molestiae, corrupti ut id
+                                amet
+                                porro voluptates voluptas. Earum, dolor quibusdam. Amet, cupiditate laboriosam
+                                eligendi deserunt placeat error est, quas perferendis aspernatur recusandae
+                                atque
+                                eum maxime reprehenderit quos adipisci. Recusandae, maiores aliquam saepe
+                                tenetur
+                                eveniet soluta commodi aspernatur enim doloremque culpa, sequi in quasi, optio
+                                blanditiis reprehenderit qui earum natus quam cumque est. Eius a similique ex
+                                aut
+                                facilis optio sequi maiores reprehenderit. Animi corporis ducimus velit nostrum,
+                                blanditiis odit minus aut autem quas esse quam, architecto aliquid pariatur sint
+                                necessitatibus eum quia deleniti voluptate unde suscipit aspernatur
+                                consequuntur.
+                                Quidem magni unde aliquid expedita. Necessitatibus similique quaerat accusamus
+                                delectus consequuntur deleniti perferendis in, omnis enim molestiae eaque
+                                inventore
+                                aut quam ipsam rem alias veniam vero magni aliquam veritatis? Quo quam qui
+                                laudantium blanditiis rem odit eveniet, autem sunt. Ex eaque beatae unde dolorum
+                                corporis natus nisi quae distinctio temporibus voluptatem, facere ab ipsam
+                                facilis,
+                                fugiat repellat. Necessitatibus, numquam quos ab corrupti culpa dignissimos ipsa
+                                molestiae, aliquid dolores obcaecati iste hic excepturi sit enim veritatis
+                                deserunt
+                                voluptate eos pariatur quaerat illo repudiandae, recusandae quo porro! Est
+                                dolorum,
+                                voluptatibus quam placeat odit sint quos, dolore autem saepe distinctio at
+                                temporibus vitae eum. Maxime asperiores incidunt repudiandae! Tempora omnis
+                                commodi
+                                enim delectus amet facere. Quis eligendi necessitatibus reprehenderit quam quia
+                                ipsa
+                                veritatis provident molestiae nobis assumenda, amet possimus laudantium maiores
+                                voluptatum sed, quibusdam aliquid placeat repellendus in, eaque fugiat. Odit sit
+                                modi, cum dolore inventore numquam odio soluta corrupti aut at illo laboriosam
+                                molestiae asperiores ullam officia omnis tempora repellat mollitia aperiam
+                                voluptas
+                                harum veritatis eum laudantium! Praesentium, ea. Pariatur, et voluptate delectus
+                                eius ab necessitatibus quisquam voluptates, nihil dolore fugiat vitae ut
+                                perferendis
+                                hic quo doloribus doloremque nisi alias ex tempora explicabo similique
+                                exercitationem. Eos cumque corporis, voluptatem ipsum possimus labore, omnis
+                                maxime
+                                quam praesentium repellendus eius voluptatibus totam. Dignissimos saepe esse
+                                nostrum, voluptatibus eum aspernatur et qui a sint ipsam ducimus quibusdam
+                                doloremque similique, porro dolore totam dolorum ipsum cumque unde aliquam
+                                labore
+                                quisquam expedita! Quas, veniam alias aspernatur rerum doloremque possimus ullam
+                                necessitatibus nemo cupiditate ad, sit porro officia quisquam dolor consectetur
+                                ea
+                                aperiam maiores iure deserunt? Accusamus placeat excepturi officiis ut mollitia
+                                nobis dignissimos incidunt architecto voluptas reiciendis, optio molestias
+                                commodi
+                                praesentium illum enim, pariatur id sit, tempora iusto inventore nostrum quam
+                                numquam. Nesciunt inventore harum ducimus maxime facere quidem corrupti facilis
+                                ex
+                                sed qui ab aliquid, dolorem totam voluptatibus dolorum hic ad veritatis
+                                laboriosam
+                                reprehenderit vitae. Provident ducimus blanditiis aliquam animi explicabo odio
+                                aspernatur. In explicabo voluptates voluptatum, id deleniti quam possimus sint
+                                inventore voluptate eveniet magnam voluptatibus, sunt a saepe quis iusto.
+                                Accusamus
+                                quae excepturi, soluta vel delectus voluptate tempore provident odio corrupti,
+                                cum
+                                in esse commodi iusto consequatur reprehenderit obcaecati sequi dolores ipsam
+                                odit
+                                laudantium? Soluta consequuntur dolor nisi. Quas cumque excepturi autem iste
+                                officiis! Sed ducimus rerum qui exercitationem dicta, pariatur nemo magnam, odit
+                                tempora porro sequi dolor veniam in suscipit! Earum blanditiis recusandae ipsam
+                                dignissimos dolore magni id tempore? Natus quasi voluptates qui reiciendis at,
+                                quos
+                                dolorem repudiandae et nihil. Dolorum, consequatur maiores ad eveniet facere
+                                unde
+                                est consequuntur quas temporibus, velit blanditiis pariatur doloremque nam,
+                                laboriosam harum dolores voluptates placeat. Architecto molestias eos minima
+                                asperiores? Eaque et, quae sit libero, dolorum possimus nulla consequatur
+                                quibusdam
+                                deleniti rerum quasi ipsum recusandae iure veniam nam autem facere cum dicta
+                                eligendi nobis ab voluptates accusamus? Natus nobis, vitae eaque labore vero
+                                unde
+                                voluptas autem! Veritatis sint non ut? Nostrum temporibus sit asperiores itaque.
+                                Neque facilis nam sunt, sapiente, dolorum hic id repellat dicta, reprehenderit
+                                mollitia doloribus possimus perferendis. Cumque id itaque labore dolore
+                                dignissimos.
+                                Deleniti dicta delectus similique doloremque, suscipit excepturi adipisci qui,
+                                distinctio nulla repudiandae quasi aut iste quod nihil quo, laboriosam et sint
+                                rem
+                                obcaecati id totam sit quos quis nam! Tempore quaerat reiciendis consectetur
+                                voluptates, recusandae quae quisquam obcaecati blanditiis. Illum perferendis
+                                atque
+                                ut asperiores, quod dolorem dolore, neque sapiente velit, saepe praesentium?
+                                Laboriosam laborum aspernatur praesentium quos fugiat explicabo omnis eius, rem
+                                quod
+                                odit quia, dicta ducimus, possimus ullam corporis earum reprehenderit totam.
+                                Itaque
+                                commodi, nam iste inventore voluptas dolores nobis labore beatae saepe, nostrum,
+                                possimus eaque. Porro, ab harum facere voluptate sunt obcaecati? Sequi rem modi,
+                                iste adipisci reiciendis reprehenderit, ad voluptatum dolor unde aspernatur
+                                corrupti
+                                explicabo. Omnis enim sunt quo eum cumque dolores temporibus, recusandae iure
+                                rem,
+                                voluptatum quisquam ab, nemo ea! Provident quaerat eos earum possimus illo esse
+                                deserunt, odit placeat suscipit totam cum id corporis voluptate neque quidem.
+                                Corrupti quis voluptatem, fugit aut mollitia ipsam quisquam nesciunt beatae
+                                accusamus cum iusto esse ratione voluptatum consequuntur atque! Quis minus non
+                                ipsum, fuga ipsam quibusdam aliquam est, ut totam aut minima placeat voluptatum
+                                delectus perspiciatis consectetur architecto dicta veritatis et provident!
+                                Itaque
+                                dolore, culpa enim sapiente ipsam officiis!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-block">
+                        <div class="head">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <i class="fa-solid fa-caret-right"></i>
+                        </div>
+                        <div class="body">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore impedit natus
+                                dolores doloremque dolor earum qui, obcaecati ipsa fuga sed quaerat eligendi
+                                corporis nam
+                                necessitatibus eius deleniti molestias quod velit quia, nostrum, sit omnis
+                                quibusdam
+                                itaque
+                                minus. Earum illo consequatur dolores optio atque perspiciatis corporis. Harum
+                                facere iste
+                                facilis itaque.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-block">
+                        <div class="head">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <i class="fa-solid fa-caret-right"></i>
+                        </div>
+                        <div class="body">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore impedit natus
+                                dolores doloremque dolor earum qui, obcaecati ipsa fuga sed quaerat eligendi
+                                corporis nam
+                                necessitatibus eius deleniti molestias quod velit quia, nostrum, sit omnis
+                                quibusdam
+                                itaque
+                                minus. Earum illo consequatur dolores optio atque perspiciatis corporis. Harum
+                                facere iste
+                                facilis itaque.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- end ambassador faq -->
+
+        <!-- end ambassador page -->
+
+        <!-- footer -->
+
+        <footer>
+            <div class="inner-section">
+                <div class="footer-inner">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="footer-col col-lg-3 col-md-6 col-6">
+                                <div class="footer-links-top">
+                                    <p>Support</p>
+                                </div>
+                                <div class="footer-links">
+                                    <ul>
+                                        <li><a href="">Contact us</a></li>
+                                        <li><a href="">Help Center</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="l col-lg-3 col-md-6 col-6">
+                                <div class="footer-links-top">
+                                    <p>About</p>
+                                </div>
+                                <div class="footer-links">
+                                    <ul>
+                                        <li><a href="">Our Story</a></li>
+                                        <li><a href="">How it works</a></li>
+                                        <li><a href="">Ambassadors</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-col col-lg-3 col-md-6 col-6">
+                                <div class="footer-links-top">
+                                    <p>Resources</p>
+                                </div>
+                                <div class="footer-links">
+                                    <ul>
+                                        <li><a href="">Reviews</a></li>
+                                        <li><a href="">Blog</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-col col-lg-3 col-md-6 col-6">
+                                <div class="footer-links-top">
+                                    <p>Social</p>
+                                </div>
+                                <div class="footer-icons">
+                                    <span><a href=""><i class="fab fa-facebook"></i></a></span>
+                                    <span><a href=""><i class="fab fa-instagram"></i></a></span>
+                                    <span><a href=""><i class="fab fa-twitter"></i></a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-credit">
+                <p>Armourking © 2022</p>
+            </div>
+        </footer>
+    </div>
+
+    </div>
+
+    <!-- end footer -->
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
