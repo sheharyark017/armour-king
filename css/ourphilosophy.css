@@ -33,125 +33,112 @@ body {
   box-shadow: -5px -5px 3px 2px #dadada;
 }
 
-/* sheild */
+/* philosphy banner */
 
-.sheild {
-  background-color: #efefef;
-  text-align: center;
-  padding: 50px 25%;
-  border-bottom: 1px solid #ccc;
-}
-
-.sheild-top p:nth-child(1) {
-  font-size: 31px;
-  font-weight: 700;
-  color: var(--main);
-  margin-bottom: 7px;
-}
-
-.sheild-top p:nth-child(2) {
-  color: #777;
-}
-
-/* end sheild */
-
-/* nano video */
-
-.nano-video {
-  text-align: center;
-  padding: 70px 17%;
-  border-bottom: 1px solid #ccc;
-}
-
-.nano-video .video-top {
-  margin-bottom: 50px;
-}
-
-.nano-video .video-top p:nth-child(1) {
-  font-size: 31px;
-  font-weight: 700;
-  color: var(--main);
-  margin-bottom: 7px;
-}
-
-.nano-video .video-top p:nth-child(2) {
-  color: #777;
-}
-
-.video-player iframe {
+.philosphy-banner {
+  padding: 0 15%;
+  background: url("../images/our_story_paint_correction.jpg");
+  background-position: center;
+  background-size: cover;
   width: 100%;
-  aspect-ratio: 1.7777;
+  height: 80vh;
+  display: flex;
 }
 
-/* end nano video */
+.philosphy-banner .inner-section,
+.philosphy-banner .inner-banner {
+  height: 100%;
+}
 
-/* nano tech */
-
-.nano-tech {
+.philosphy-banner .inner-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 50px 17%;
-  background-color: #f9f8f6;
-  border-bottom: 1px solid #ccc;
 }
 
-.nano-tech-top {
-  margin-bottom: 50px;
+.philosphy-banner .banner-text {
+  background: rgb(225, 225, 225, 0.9);
+  width: 80%;
+  padding: 40px;
 }
 
-.nano-tech-top p:nth-child(1) {
+.philosphy-banner .banner-text p:nth-child(1) {
   font-size: 30px;
   font-weight: 700;
   color: var(--main);
+  margin-bottom: 10px;
 }
 
-.nano-tech-top p:nth-child(2) {
-  color: #777;
-  font-size: 15px;
+.philosphy-banner .banner-text p:nth-child(2) {
+  color: #444444;
 }
 
-.nano-tech-top p:nth-child(3) {
-  color: #777;
-  font-size: 15px;
+/* end philosphy banner */
+
+/* delivery */
+
+.delivery {
+  padding: 60px 12%;
+  border-bottom: 1px solid #ccc;
 }
 
-.nano-tech .nano-coated {
-  margin-bottom: 70px;
+.delivery-top {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.nano-tech .coated-top {
-  margin-bottom: 20px;
-}
-
-.nano-tech .coated-top p {
-  font-size: 27px;
-  color: var(--main);
-  font-weight: 700;
-}
-
-.nano-tech .coated-image img {
-  width: 80%;
-}
-
-.nano-tech .zoom-top {
-  margin-bottom: 30px;
-}
-
-.nano-tech .zoom-top p {
-  font-size: 27px;
+.delivery-top p:nth-child(1) {
+  font-size: 32px;
   font-weight: 700;
   color: var(--main);
+  margin-bottom: 7px;
 }
 
-.nano-tech .zoom-images {
+.delivery-top p:nth-child(2) {
+  color: #777;
+}
+
+.delivery-icons {
+  text-align: center;
+}
+
+.delivery-icons img {
+  width: 9%;
+  margin-right: 7px;
+}
+
+/* end delivery */
+
+/* bottle */
+
+.bottle {
+  padding: 60px 15%;
+  background: #f5f5f5;
+  border-bottom: 1px solid #ccc;
+}
+
+.bottle-section {
   display: flex;
+}
+
+.bottle .bottle-text {
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
 }
 
-.nano-tech .zoom-images img {
-  width: 25%;
+.bottle .bottle-text p {
+  color: #5e5e5e;
+  font-size: 17px;
+  border-bottom: 1px solid #777;
 }
 
-/* end nano tech */
+.bottle .bottle-image {
+  margin: 0 20px;
+}
+
+/* end bottle */
 
 /* nano comparison */
 
@@ -259,87 +246,77 @@ body {
 /* end nano comparison */
 
 @media screen and (max-width: 980px) {
-  /* sheild */
+  /* philosphy banner */
 
-  .sheild {
-    padding: 50px 5%;
+  .philosphy-banner {
+    padding: 10% 2%;
+    height: 100%;
   }
 
-  .sheild-top p:nth-child(1) {
+  .philosphy-banner .banner-text {
+    background: rgb(225, 225, 225, 0.8);
+    width: 95%;
+    padding: 20px;
+  }
+
+  .philosphy-banner .banner-text p:nth-child(1) {
+    font-size: 25px;
+    margin-bottom: 7px;
+  }
+
+  /* end philosphy banner */
+
+  /* delivery */
+
+  .delivery {
+    padding: 60px 5%;
+  }
+  .delivery-top {
+    margin-bottom: 30px;
+  }
+
+  .delivery-top p:nth-child(1) {
     font-size: 25px;
   }
 
-  .sheild-top p:nth-child(2) {
-    font-size: 15px;
-    color: #777;
-  }
-
-  .sheil-image img {
-    width: 100%;
-  }
-
-  /* end sheild */
-
-  /* nano video */
-
-  .nano-video {
-    padding: 50px 5%;
-  }
-
-  .nano-video .video-top {
-    margin-bottom: 40px;
-  }
-
-  .nano-video .video-top p:nth-child(1) {
-    font-size: 25px;
-  }
-
-  .nano-video .video-top p:nth-child(2) {
+  .delivery-top p:nth-child(2) {
     font-size: 15px;
   }
 
-  /* end nano video */
-
-  /* nano tech */
-
-  .nano-tech {
-    padding: 50px 5%;
+  .delivery-icons {
+    text-align: center;
   }
 
-  .nano-tech-top p:nth-child(1) {
-    color: var(--main);
+  .delivery-icons img {
+    width: 10%;
+    margin-right: 0px;
   }
 
-  .nano-tech-top p:nth-child(2) {
+  /* end delivery */
+
+  /* bottle */
+
+  .bottle {
+    padding: 60px 2%;
+  }
+
+  .bottle-section {
+    align-items: center;
+  }
+
+  .bottle .bottle-text p {
     font-size: 14px;
+    margin-bottom: 20px;
   }
 
-  .nano-tech-top p:nth-child(3) {
-    font-size: 14px;
+  .bottle .bottle-image {
+    margin: 0 10px;
   }
 
-  .nano-tech .nano-coated {
-    margin-bottom: 50px;
+  .bottle .bottle-image img {
+    width: 90px;
   }
-
-  .nano-tech .coated-top p {
-    font-size: 23px;
-  }
-
-  .nano-tech .coated-image img {
-    width: 70%;
-  }
-
-  .nano-tech .zoom-top p {
-    font-size: 23px;
-  }
-
-  .nano-tech .zoom-images img {
-    width: 35%;
-  }
-
-  /* end nano tech */
-
+  /* end bottle */
   /* nano comparison */
 
   .nano-comparison {

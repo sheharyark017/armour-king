@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --main: #132258;
+}
+
+.inner-section {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.main-button {
+  background-color: var(--main);
+  color: #fff;
+  padding: 8px 22px;
+  transition: all 0.2s linear;
+  border-radius: 3px;
+}
+
+.main-button-promo {
+  background-color: var(--main);
+  color: #fff;
+  padding: 8px 22px;
+  transition: all 0.2s linear;
+  border-radius: 3px;
+}
+
+.main-button:hover {
+  background-color: #192966;
+  color: #fff;
+  padding: 9px 28px;
+}
+
+.main-button-promo:hover {
+  background-color: #0f1a46;
+  color: #fff;
+}
+
+.checkout-top p {
+  font-size: 32px;
+  color: var(--main);
+  font-weight: 700;
+}
+
+form .form-control:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border: 1px solid var(--main);
+}
+
+form button:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.checkout-form-button {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.checkout-button {
+  border: none;
+}
+
+.checkout-button:hover,
+.checkout-button:focus {
+  text-align: center;
+}
