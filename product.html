@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <!-- css file -->
-    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/accordion.css">
@@ -70,9 +70,9 @@
                 </div>
                 <div class="nav-links">
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Shop</a></li>
-                        <li><a href="">How It Works</a></li>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/products.html">Shop</a></li>
+                        <li><a href="/nanotech.html">How It Works</a></li>
                     </ul>
                 </div>
                 <div class="nav-cart cart-button">
@@ -166,63 +166,55 @@
 
     <!-- end navbar -->
 
-    <!-- shop -->
-
-    <div class="home-body">
-
-        <div class="shop">
-            <div class="inner-section">
-                <div class="shop-top">
-                    <p>Shop</p>
-                </div>
-
-                <div class="shop-products">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="shop-product-col col-lg-4 col-md-6 col-12">
-                                <div class="shop-product ">
-                                    <div class="product-image">
-                                        <img src="images/blue-botal.png" alt="">
-                                    </div>
-                                    <div class="product-name">
-                                        <p>Nano Graphene 9K Coating</p>
-                                    </div>
-                                    <div class="product-price">
-                                        <p>$150</p>
-                                    </div>
-                                    <div class="product-button">
-                                        <button class="main-button">Add to cart</button>
-                                    </div>
-                                </div>
+    <div class="product-page">
+        <div class="inner-section">
+            <div class="product-top">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="product-image col-lg-6 col-md-12 col-12">
+                            <img src="images/blue-botal.png" alt="">
+                        </div>
+                        <div class="product-text col-lg-6 col-md-12 col-12">
+                            <div class="product-name">
+                                <p>Nano Graphine 9K Coating</p>
                             </div>
-
-                            <div class="shop-product-col col-lg-4 col-md-6 col-12">
-                                <div class="shop-product ">
-                                    <div class="product-image">
-                                        <img src="images/unnamed-2.png" alt="">
-                                    </div>
-                                    <div class="product-name">
-                                        <p>Nano Graphene 10K Coating</p>
-                                    </div>
-                                    <div class="product-price">
-                                        <p>$150</p>
-                                    </div>
-                                    <div class="product-button">
-                                        <button class="main-button">Add to cart</button>
-                                    </div>
+                            <div class="product-price">
+                                <p>$150.00</p>
+                            </div>
+                            <div class="product-addcart">
+                                <div class="product-addcart-counter">
+                                    <input type="number" min="1" value="1">
+                                </div>
+                                <div class="product-addcart-button">
+                                    <button class="main-button">Add to cart</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-
-            <!-- end shop -->
-
+            <div class="product-description">
+                <div class="product-description-top">
+                    <p>Description</p>
+                    <p>Armour King Nano Graphine 9K Coating</p>
+                </div>
+                <div class="product-description-list">
+                    <ul>
+                        <li>High Gloss Preseved</li>
+                        <li>No Corrosion And Oxidation</li>
+                        <li>Resistance To UV Radiation</li>
+                        <li>High Gloss Preseved</li>
+                        <li>No Corrosion And Oxidation</li>
+                        <li>Resistance To UV Radiation</li>
+                    </ul>
+                </div>
+            </div>
         </div>
+    </div>
 
-        <!-- footer -->
+    <!-- footer -->
+
+    <div class="home-body">
 
         <footer>
             <div class="inner-section">
@@ -283,12 +275,11 @@
             </div>
         </footer>
 
+        <!-- end footer -->
+
     </div>
 
-    <!-- end footer -->
-
     <script src="js/index.js"></script>
-
 </body>
 
 </html>

@@ -16,6 +16,8 @@ const cartButton = document.querySelector(".cart-button");
 
 const cart = document.querySelector(".cart-sidebar");
 
+const cartBackground = document.querySelector(".cart-background");
+
 const cartCloseButton = document.querySelector(".cart-close");
 
 const homeBody = document.querySelector(".home-body");
@@ -52,15 +54,19 @@ hamburger.addEventListener("click", function () {
 
 cartButton.addEventListener("click", function () {
   cart.classList.add("cart-active");
+  cartBackground.classList.add("cart-background-acive");
 });
 
 cartCloseButton.addEventListener("click", function () {
   console.log("hello");
+
   cart.classList.remove("cart-active");
+  cartBackground.classList.remove("cart-background-acive");
 });
 
-homeBody.addEventListener("click", function () {
+cartBackground.addEventListener("click", function () {
   cart.classList.remove("cart-active");
+  cartBackground.classList.remove("cart-background-acive");
 });
 
 // end moving cart
