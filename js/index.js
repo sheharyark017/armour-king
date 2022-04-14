@@ -8,11 +8,17 @@ const innerNav = document.querySelector(".inner-nav");
 
 const navHeight = nav.clientHeight;
 
+const itemQty = document.querySelectorAll(".item-qty");
+
+const totalQty = document.querySelector(".total-qty");
+
 const navLinks = document.querySelector(".nav-links");
 
 const hamburger = document.querySelector(".hamburger");
 
 const cartButton = document.querySelector(".cart-button");
+
+const cartButton1 = document.querySelector(".cart-button1");
 
 const cart = document.querySelector(".cart-sidebar");
 
@@ -57,6 +63,15 @@ cartButton.addEventListener("click", function () {
   cartBackground.classList.add("cart-background-acive");
 });
 
+cartButton1.addEventListener("click", function () {
+  if (cart.classList.contains("cart-actice")) {
+    return;
+  }
+
+  cart.classList.add("cart-active");
+  cartBackground.classList.add("cart-background-acive");
+});
+
 cartCloseButton.addEventListener("click", function () {
   console.log("hello");
 
@@ -70,3 +85,19 @@ cartBackground.addEventListener("click", function () {
 });
 
 // end moving cart
+
+let total;
+
+// console.log(
+//   itemQty.forEach((item) => {
+//     return (total += Number(item.textContent));
+//   })
+// );
+
+let totalNumber;
+
+for (const item of itemQty) {
+  totalNumber = totalNumber + Number(item.textContent);
+}
+
+console.log(totalNumber);
