@@ -53,6 +53,10 @@ body {
   color: #777;
 }
 
+.sheild-image img {
+  width: 100%;
+}
+
 /* end sheild */
 
 /* nano video */
@@ -272,10 +276,6 @@ body {
   .sheild-top p:nth-child(2) {
     font-size: 15px;
     color: #777;
-  }
-
-  .sheil-image img {
-    width: 100%;
   }
 
   /* end sheild */

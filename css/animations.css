@@ -1,0 +1,20 @@
+/* section animations */
+
+.section {
+  transition: 1.4s all;
+}
+
+.section-hidden {
+  opacity: 0;
+  transform: translatey(8rem);
+}
+
+.section-left.section-hidden {
+  transform: translatex(-12rem);
+}
+
+.section-right.section-hidden {
+  transform: translatex(12rem);
+}
+
+/* end section animations */

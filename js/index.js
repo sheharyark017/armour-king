@@ -1,5 +1,7 @@
 // declarations
 
+const allSections = document.querySelectorAll(".section");
+
 const accordions = document.querySelectorAll(".accordion-block");
 
 const nav = document.querySelector(".main-nav");
@@ -28,7 +30,7 @@ const cartCloseButton = document.querySelector(".cart-close");
 
 const homeBody = document.querySelector(".home-body");
 
-// end declarations
+// end declarations\
 
 // accordions
 
@@ -63,14 +65,14 @@ cartButton.addEventListener("click", function () {
   cartBackground.classList.add("cart-background-acive");
 });
 
-cartButton1.addEventListener("click", function () {
-  if (cart.classList.contains("cart-actice")) {
-    return;
-  }
+// cartButton1.addEventListener("click", function () {
+//   if (cart.classList.contains("cart-active")) {
+//     return;
+//   }
 
-  cart.classList.add("cart-active");
-  cartBackground.classList.add("cart-background-acive");
-});
+//   cart.classList.add("cart-active");
+//   cartBackground.classList.add("cart-background-acive");
+// });
 
 cartCloseButton.addEventListener("click", function () {
   console.log("hello");
@@ -101,3 +103,25 @@ for (const item of itemQty) {
 }
 
 console.log(totalNumber);
+
+const revealSection = (entries, observer) => {
+  const [entry] = entries;
+  console.log(entry);
+
+  if (!entry.isIntersecting) {
+    return;
+  }
+  entry.target.classList.remove("section-hidden");
+
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.2,
+});
+
+allSections.forEach((Section) => {
+  sectionObserver.observe(Section);
+  Section.classList.add("section-hidden");
+});

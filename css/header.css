@@ -146,6 +146,14 @@ nav {
   height: 80px;
 }
 
+.navbar-right {
+  display: flex;
+}
+
+.nav-links {
+  margin-right: 20px;
+}
+
 .nav-links ul {
   display: flex;
   padding: 0;
@@ -377,6 +385,7 @@ nav {
     overflow: hidden;
     overflow-y: auto;
     transition: 0.5s;
+    left: 0;
   }
 
   .nav-links li {
