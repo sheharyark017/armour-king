@@ -53,8 +53,8 @@ nav {
 
 .account-dropdown {
   position: absolute;
-  top: 23px;
-  right: 0;
+  top: 52px;
+  right: 75px;
   text-align: left;
   z-index: 99;
   background-color: #fff;
@@ -64,6 +64,10 @@ nav {
   font-size: 17px;
   color: #6b6b6b;
   box-shadow: 0 0 4px 0 rgb(153, 153, 153);
+}
+
+.account-dropdown li {
+  margin: 0 !important;
 }
 
 .account:hover .account-dropdown {
@@ -160,10 +164,19 @@ nav {
   margin: 0;
 }
 
-.nav-links ul li {
+.account ul {
+  display: block;
+}
+
+.nav-links ul li,
+.nav-links ul span {
   list-style: none;
   margin: 0 15px;
   font-weight: 500;
+}
+
+.nav-links ul li.signup {
+  display: none;
 }
 
 /* cart */
@@ -399,6 +412,14 @@ nav {
 
   .nav-links ul {
     flex-direction: column;
+  }
+
+  .nav-links ul li.signup {
+    display: block;
+  }
+
+  .nav-links ul .account {
+    display: none;
   }
 
   .nav-links-acive {

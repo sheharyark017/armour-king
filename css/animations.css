@@ -1,5 +1,9 @@
 /* section animations */
 
+body {
+  overflow-x: hidden;
+}
+
 .section {
   transition: 1.4s all;
 }
